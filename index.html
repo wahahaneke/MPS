@@ -554,6 +554,34 @@
             z-index: 1000;
             display: none;
         }
+        
+        /* 页脚样式 */
+        .copyright-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 0.75rem;
+            font-weight: 400;
+            z-index: 900;
+            backdrop-filter: blur(5px);
+        }
+        
+        .license-text {
+            margin-left: 10px;
+            color: hsla(130, 67%, 60%, 0.8);
+        }
+        
+        @media (max-width: 640px) {
+            .copyright-footer {
+                padding: 5px 0;
+                font-size: 0.7rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1461,5 +1489,13 @@
             }
         }
     </script>
+    
+    <!-- 页脚版权信息 -->
+    <footer class="copyright-footer">
+        <div class="copyright-text">
+            Copyright © 2025 MPS Token. All Rights Reserved.
+            <span class="license-text">MIT License</span>
+        </div>
+    </footer>
 </body>
 </html> 
